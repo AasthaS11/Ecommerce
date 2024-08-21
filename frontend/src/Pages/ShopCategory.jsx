@@ -18,6 +18,7 @@ const ShopCategory = (props) => {
 
      <div className="shopcategory-sort">
         Sort by <img src={dropdown_icon} alt="" />
+        {/* dropdown me add krna he kuch jo dropdown ho, its just an icon image for now. */}
      </div>
 
      <div className="shopcategory-products">
@@ -29,6 +30,13 @@ const ShopCategory = (props) => {
         }      
 })}
         </div>
+
+      <div className="shopcategory-loadmore">
+
+        <button>Explore more</button>
+        {/* Explore more  */}
+        {/* add a button here on the exploremore option*/}
+      </div>
 
     </div>
   )
