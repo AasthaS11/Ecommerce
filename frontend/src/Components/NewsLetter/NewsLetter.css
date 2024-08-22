@@ -8,9 +8,9 @@
     margin: auto;
     padding: 0px 140px;
     margin-bottom: 150px;
-    background: ;
+    background: #e29a70;
     gap:30px;
-    background-image: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    background-image: linear-gradient(120deg, #e29a70, #e1ffea22 60%);
 }
 
 .newsletter h1{
