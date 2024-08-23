@@ -34,8 +34,7 @@ const ShopCategory = (props) => {
       <div className="shopcategory-loadmore">
 
         <button>Explore more</button>
-        {/* Explore more  */}
-        {/* add a button here on the exploremore option*/}
+        {/* Explore more should also redirect somewhere  */}
       </div>
 
     </div>

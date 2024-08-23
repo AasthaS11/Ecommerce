@@ -24,6 +24,8 @@ export const CartItems = () => {
                   <img src={e.image} alt="" className='carticon-product-icon'/>
                   <p>{e.name}</p>
                   <p>${e.new_price}</p>
+
+                {/* have to add + and - icons on the either side of quantity and the cross icon for the removal of complete item */}
                   <button className='cartitems-quantity' onClick={()=>{addToCart(e.id, e.new_price)}}>{cartItems[e.id]}</button>
                   <p>${e.new_price*cartItems[e.id]}</p>
                   {/* <p>{count}</p> */}
