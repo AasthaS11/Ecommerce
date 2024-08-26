@@ -6,6 +6,21 @@ const userSchema = mongoose.Schema({
   name: { type: "string", required: true },
   email: { type: "string", required: true, unique: true },
   password: { type: "string", required: true },
+  isVerified:{
+    type : Boolean,
+    default : false
+},
+ verifyToken:{
+  type : String,
+  default : null
+},
+forgotPasswordToken:{
+  type : String,
+  default : null,
+},
+tokenValidity:{
+  type:Date,
+}
   // role: { type: "string", default: "user", enum: ["user", "admin"] },
 });
 
@@ -13,7 +28,8 @@ userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) {
     next();
   }
-  this.password = await bcrypt.hash(this.password, 10);
+  const salt = await bcrypt.genSalt(10);
+  this.password = await bcrypt.hash(this.password, salt);
   next();
 });
 
