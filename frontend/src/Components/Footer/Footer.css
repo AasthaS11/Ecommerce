@@ -53,7 +53,7 @@ gap:20px;
     width: 100%;
     margin-bottom: 30px;
     color:#1a1a1a;
-    font-size: ;
+    font-size:16px ;
 }
 
 .footer-copyright hr{
@@ -62,4 +62,31 @@ gap:20px;
     border-radius: 10px;
     height: 3px;
     background: #c7c7c7;
+}
+
+@media(max-widht:800px){
+    .footer{
+        gap:20px;
+    }
+
+    .footer-logo{
+        align-items: end;
+        gap: 10px;
+}
+.footer-logo img{
+    width: 40px;
+}
+    .footer-logo p{
+        font-size: 20px;
+    }
+    .footer-links{
+        font-size: 14px;
+        gap: 10px;
+    }
+    .footer-social-icons img{
+        width: 22px;
+    }
+    .footer-copyright{
+        font-size: 13px;
+    }
 }

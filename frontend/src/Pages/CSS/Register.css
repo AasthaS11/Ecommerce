@@ -1,47 +1,105 @@
 .register-page {
-    max-width: 400px;
-    margin: auto;
-    padding: 1rem;
-    background-color: #d3ab62; 
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+  padding: 1rem;
+  background-color: #fffefb; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-page h2 {
+  text-align: center;
+  color: #ca8230; 
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #55524a; 
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #f7f6f5; 
+  border-radius: 4px;
+  background-color: #f0f8f0; 
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  background-color: #47391d; 
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #999; 
+}
+
+/* Responsive Design */
+
+@media (max-width: 1280px) {
+  .register-page {
+    max-width: 350px;
+    padding: 0.9rem;
   }
-  
-  .register-page h2 {
-    text-align: center;
-    color: #ca8230; 
-  }
-  
-  .form-group {
-    margin-bottom: 1rem;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #55524a; 
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ac721c; 
-    border-radius: 4px;
-    background-color: #f0f8f0; 
-  }
-  
+
   button {
-    width: 100%;
-    padding: 0.75rem;
-    border: none;
-    background-color: #47391d; 
-    color: white;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 0.7rem;
+    font-size: 0.95rem;
   }
-  
-  button:disabled {
-    background-color: #999; 
+}
+
+@media (max-width: 1024px) {
+  .register-page {
+    max-width: 320px;
+    padding: 0.8rem;
   }
-  
+
+  button {
+    padding: 0.65rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .register-page {
+    max-width: 280px;
+    padding: 0.7rem;
+  }
+
+  button {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .form-group input {
+    padding: 0.45rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .register-page {
+    max-width: 250px;
+    padding: 0.6rem;
+  }
+
+  button {
+    padding: 0.55rem;
+    font-size: 0.8rem;
+  }
+
+  .form-group input {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
+import "../Pages/CSS/Login.css"
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -14,6 +15,7 @@ const LoginPage = () => {
 
     if (!email || !password) {
       toast.error("Please fill in all fields");
+      // alert("Please fill in all fields");
       return;
     }
 
